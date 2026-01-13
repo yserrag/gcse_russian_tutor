@@ -172,9 +172,9 @@ Begin the tutoring session!
       parts: [{ text: 'Understood. I will act as a Russian GCSE tutor following these exact pedagogical constraints and respond in the specified JSON format.' }]
     });
 
-    // Call Google Gemini API
+    // Call Google Gemini API with Gemini 2.0 Flash
     const geminiResponse = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${env.GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${env.GEMINI_API_KEY}`,
       {
         method: 'POST',
         headers: {
